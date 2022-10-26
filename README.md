@@ -85,6 +85,10 @@ struct Content: View {
 
 ![Change Currency](https://trinchero.me/samples/swiftui-currency-field-sample-2.gif)
 
-## Credit
+## Credits
 
 This package was originally inspired by this tutorial: [Currency TextField in SwiftUI](https://benoitpasquier.com/currency-textfield-in-swiftui/)
+
+## License
+
+`CurrencyField` is available under the MIT license. See the [LICENSE](/LICENSE) for more info.
