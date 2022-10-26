@@ -4,7 +4,7 @@ With **Currency Field** you can create a numerical input field most commonly fou
 
 Example:
 
-![Sample](https://trinchero.me/samples/swiftui-currency-field-sample-1.gif)
+![Example](https://trinchero.me/samples/swiftui-currency-field-sample-1.gif)
 
 ## Installation
 
@@ -25,7 +25,12 @@ struct Content: View {
 
     var body: some View {
         Form {
-            CurrencyField(value: $value)
+            HStack {
+                Spacer()
+                
+                CurrencyField(value: $value)
+                    .font(.largeTitle.monospaced())
+            }
         }
     }
 }
