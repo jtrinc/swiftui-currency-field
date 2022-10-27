@@ -82,7 +82,7 @@ struct CurrencyInputField: UIViewRepresentable {
         )
 
         // Set initial value
-        context.coordinator.setValue(0, textField: textField)
+        context.coordinator.setValue(value, textField: textField)
 
         return textField
     }
