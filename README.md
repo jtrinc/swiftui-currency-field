@@ -1,6 +1,6 @@
 # CurrencyField
 
-With **Currency Field** you can create a numerical input field most commonly found in banking apps. The user types in the amount, and the digits fill in from the right. It uses a `UITextField` for custom input, and a `SwiftUI.Text` to display the formatted value which allows for easy styling.
+With **Currency Field** you can create a numerical input field most commonly found in banking apps. The user types in the amount, and the digits fill in from the right. It uses a `UITextField` for custom input, and a `SwiftUI.Text` to display the formatted value which allows for easy styling. This also makes it possible to use the `.focused()` modifier to update its first responder state.
 
 Example:
 

@@ -81,8 +81,8 @@ struct CurrencyInputField: UIViewRepresentable {
             for: .editingChanged
         )
 
-        // Set initial value
-        context.coordinator.setValue(value, textField: textField)
+        // Set initial textfield text
+        context.coordinator.updateText(value, textField: textField)
 
         return textField
     }
@@ -104,6 +104,11 @@ struct CurrencyInputField: UIViewRepresentable {
             // Update input value
             input.value = value
 
+            // Update textfield text
+            updateText(value, textField: textField)
+        }
+
+        func updateText(_ value: Int, textField: UITextField) {
             // Update field text and last valid input text
             textField.text = String(value)
             lastValidInput = String(value)
@@ -131,7 +136,7 @@ struct CurrencyInputField: UIViewRepresentable {
 
             // Iterate through each char of the new string and compare LTR with old string
             let char = (textField.text ?? "").first { next in
-                // If old text is empty or it's next character doesn't match new
+                // If old text is empty or its next character doesn't match new
                 if oldText.isEmpty || next != oldText.removeFirst() {
                     // Found the mismatching character
                     return true
