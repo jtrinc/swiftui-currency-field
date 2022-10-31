@@ -1,5 +1,9 @@
 # CurrencyField
 
+[![Swift](https://img.shields.io/badge/swift-5.0-orange.svg)](https://developer.apple.com/swift/)
+[![SwiftPm](https://img.shields.io/badge/swiftpm-compatible-limegreen.svg?)](https://swift.org/package-manager)
+[![SwiftUI](https://img.shields.io/badge/swiftUI-blue.svg)](https://developer.apple.com/xcode/swiftui/)
+
 With **Currency Field** you can create a numerical input field most commonly found in banking apps. The user types in the amount, and the digits fill in from the right. It uses a `UITextField` for custom input, and a `SwiftUI.Text` to display the formatted value which allows for easy styling. This also makes it possible to use the `.focused()` modifier to update its first responder state.
 
 Example:
@@ -8,10 +12,12 @@ Example:
 
 ## Installation
 
-Add this **Swift package** to your project's package list.
+### Swift Package Manager
 
 ```text
-https://github.com/jtrinc/swiftui-currency-field
+dependencies: [
+    .package(url: "https://github.com/jtrinc/swiftui-currency-field.git", from: "1.0.0")
+]
 ```
 
 ## Sample Usage
